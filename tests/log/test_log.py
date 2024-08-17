@@ -12,7 +12,7 @@ def test_log_context_manager():
     logger = logging.getLogger()
     logger.addHandler(handler)
 
-    original_level = logging.WARNING
+    original_level = logging.INFO
     logger.setLevel(original_level)
 
     with log(logging.DEBUG) as logger:
